@@ -1,0 +1,15 @@
+#NOM DE WORKFLOW
+name : Hello World
+
+# Evenement qui declenche le workflow
+on : [ push ]
+
+
+# definition des taches job a executer
+jobs:
+  say_hello:  #nom du job
+    runs-on: ubuntu-latest  # machine virtual runnner 
+
+    steps:  # suite des etapes
+      -name: Print Hello  #nom de l'etape
+        run : echo "Hello, Brooo Wtspp !!"  #commande a executer
